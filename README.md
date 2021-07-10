@@ -1,2 +1,2 @@
-# cards_of_rick_and_morty
+# Cards of Rick & Morty
 Proyecto de react con React Hooks y consumo de API de Rick&amp;Morty
