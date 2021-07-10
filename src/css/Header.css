@@ -1,0 +1,33 @@
+.Header{
+    padding:20px 0;
+    display: block;
+}
+
+.Header h1{
+    font-size: 3em;
+}
+
+.controlMode{
+    width: 60px;
+    height: 60px;
+    background-color: var(--amarilloRM);
+    position: absolute;
+    top:20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+    .controlMode img{ width: 40px; height: 40px;}
+
+body.dark .controlMode, .controlMode.light:hover{
+    background-color: var(--verdeRM);
+}
+
+body.dark .controlMode.dark:hover{
+    background-color: var(--amarilloRM);
+}

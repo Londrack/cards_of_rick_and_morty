@@ -1,0 +1,217 @@
+.charactersGeneralBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#allCardsBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 20px 15px;
+    max-width: 95%;
+}
+
+.cardBox:hover .flipButton{
+    opacity: 1;
+}
+
+.cardBox.flip .card{
+    transform: rotateY(180deg);
+}
+
+.card{
+    display:block;
+    width: 230px;
+    height: 400px;
+    border-radius: var(--border-radius);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    color: black;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+body.dark .face{ background-color: white;}
+
+.face .contenido{
+    background: var(--verdeRM) var(--fondo-tecno);
+    width: 210px;
+    height: 380px;
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.label{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: var(--verdeRM) var(--fondo-tecno);
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    align-items:flex-end;
+}
+
+    .label img{ width: 35px; height: 35px;}
+
+    .label:before{
+        content:" ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        position: absolute;
+    }
+
+.label.gender {
+    left: 0;
+    justify-content:flex-end;
+}
+
+    .label.gender:before{
+        border-width: 40px 0 0 40px;
+        border-color: transparent transparent transparent var(--verdeRM);
+        right: -40px;
+
+    }
+
+.label.status {
+    right:0;
+    justify-content:flex-start;
+}
+    .label.status:before {
+        border-width: 0 0 40px 40px;
+        border-color: transparent transparent var(--verdeRM);
+        left: -40px;
+    }
+
+.imgBox{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.flipButton{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    transform: rotate(20deg);
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+    .flipButton img {
+        width: 40px;
+        height: 40px;
+    }
+
+.favoriteButton{
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    background: url('https://img.icons8.com/material-rounded/48/000000/star--v1.png');
+}
+    .favoriteButton.off{
+        background: url('https://img.icons8.com/fluent-systems-regular/48/000000/star--v1.png');
+    }
+
+body.dark .favoriteButton{
+    filter: invert(100%);
+}
+
+.characterName{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 50px;
+    padding: 8px;
+}
+
+.characterName h2{
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+.characterName h3{
+    font-size: 1.2em;
+    padding-top: 5px;
+    font-style: italic;
+}
+
+.characterName.mini1 h2{
+    font-size: 1.1em;
+}
+
+.face.back{
+    transform: rotateX(180deg);
+}
+
+.face.back .contenido{
+    width: 180px;
+    height: 350px;
+    padding: 15px;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.face.back .contenido h2{
+    margin-bottom: 15px;
+}
+
+.face.back .contenido p{
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.Search {
+    margin-bottom: 20px;
+}
+.Search input{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Search input:focus{
+    outline: 0;
+}
+
+.favoritesBox{
+    display: flex;
+    width: 85%;
+    margin: 0 auto 20px;
+    align-items: center;
+}
+
+.favCharacter{
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    margin-left: 15px;
+    overflow: hidden;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .favCharacter img{ width: 120%;}
+
+body.dark .favCharacter{ border-color: white;}
