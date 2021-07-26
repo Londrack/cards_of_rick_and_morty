@@ -10,13 +10,14 @@ export default function Characters({
         addFavorite,
         imgStatus,
         imgGender,
-        toggleClass
+        toggleClass,
+        loadingStatus
     }) {
 
     return (
         (loading) ?
             <div>
-                <p>LOADING...</p>
+                <p>LOADING... {loadingStatus}%</p>
             </div>
         :
             <div>
@@ -27,7 +28,7 @@ export default function Characters({
                             <img alt={favorite.name} src={favorite.image} />
                         </a>
                     ))}
-                    {/* {(favorites.favorites.length > 4) && 
+                    {/* {(favorites.favorites.length > 4) &&
                         <a href="#" className="favCharacter" key="0">All Favs</a>
                     } */}
                 </div>

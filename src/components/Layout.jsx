@@ -13,13 +13,14 @@ const API = 'https://rickandmortyapi.com/api/character';
 
 const Layout = () => {
 
-    const [favorites, dispatch] = useReducer(favoriteReducer, initialState);
-    const [search, setSearch] = useState('');
-    const searchInput = useRef(null);
+    const [favorites, dispatch] = useReducer(favoriteReducer, initialState)
+    const [search, setSearch] = useState('')
+    const searchInput = useRef(null)
 
-    const consult = useCharacters(API);
-    const characters = consult.characters;
-    const loading = consult.loading;
+    const consult = useCharacters(API)
+    const characters = consult.characters
+    const loading = consult.loading
+    const loadingStatus = consult.loadingStatus
 
     const claseNameCharacter = (name) => {
         let clas = "characterName";
@@ -92,6 +93,7 @@ const Layout = () => {
                 imgStatus={imgStatus}
                 imgGender={imgGender}
                 toggleClass={toggleClass}
+                loadingStatus={loadingStatus}
             />
         </>
     )
