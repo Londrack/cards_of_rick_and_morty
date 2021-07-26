@@ -11,10 +11,6 @@
     max-width: 95%;
 }
 
-.cardBox:hover .flipButton{
-    opacity: 1;
-}
-
 .cardBox.flip .card{
     transform: rotateY(180deg);
 }
@@ -58,11 +54,14 @@ body.dark .face{ background-color: white;}
     background: var(--verdeRM) var(--fondo-tecno);
     position: absolute;
     bottom: 80px;
+    cursor: pointer;
     display: flex;
-    align-items:flex-end;
+    align-items: center;
 }
 
-    .label img{ width: 35px; height: 35px;}
+    .label i{
+        font-size: 1.8em;
+    }
 
     .label:before{
         content:" ";
@@ -72,23 +71,27 @@ body.dark .face{ background-color: white;}
         position: absolute;
     }
 
-.label.gender {
-    left: 0;
+.label.fav {
     justify-content:flex-end;
 }
-
-    .label.gender:before{
+    .label.fav:before{
         border-width: 40px 0 0 40px;
         border-color: transparent transparent transparent var(--verdeRM);
         right: -40px;
-
     }
 
-.label.status {
+    .label.fav i{
+        font-weight: 900;
+    }
+    .label.fav.off i{
+        font-weight: 400;
+    }
+
+.label.info {
     right:0;
     justify-content:flex-start;
 }
-    .label.status:before {
+    .label.info:before {
         border-width: 0 0 40px 40px;
         border-color: transparent transparent var(--verdeRM);
         left: -40px;
@@ -102,32 +105,17 @@ body.dark .face{ background-color: white;}
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.flipButton{
+.infoButton{
     position: absolute;
     bottom: 10px;
     right: 5px;
     transform: rotate(20deg);
-    opacity: 0;
     transition: opacity 0.5s;
     cursor: pointer;
 }
-    .flipButton img {
+    .infoButton img {
         width: 40px;
         height: 40px;
-    }
-
-.favoriteButton{
-    width: 48px;
-    height: 48px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    cursor: pointer;
-    background: url('https://img.icons8.com/material-rounded/48/000000/star--v1.png');
-}
-    .favoriteButton.off{
-        background: url('https://img.icons8.com/fluent-systems-regular/48/000000/star--v1.png');
     }
 
 body.dark .favoriteButton{
@@ -194,22 +182,24 @@ body.dark .favoriteButton{
 }
 
 .favoritesBox{
-    display: flex;
-    width: 85%;
-    margin: 0 auto 20px;
-    align-items: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 65px;
 }
 
 .favCharacter{
     border-radius: 50px;
     height: 55px;
     width: 55px;
-    margin-left: 15px;
+    margin-top: 5px;
     overflow: hidden;
     border: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+    text-decoration: none;
 }
 
     .favCharacter img{ width: 120%;}

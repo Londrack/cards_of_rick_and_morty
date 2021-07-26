@@ -1,19 +1,59 @@
 .Header{
     padding:20px 0;
-    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.Header.fixed{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    z-index: 1;
+    padding:18px 0 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.Header.fixed h1{
+    font-size: 2em;
+}
+
+.Header.fixed .Search{
+    margin-top: 8px;
+}
+
+.Header.fixed .Search input{
+    font-size: 0.9em;
 }
 
 .Header h1{
     font-size: 3em;
+    display: inline-block;
+    margin-left: 20px;
 }
+
+.Search{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.Search input{
+    padding: 5px;
+    font-size: 0.9em;
+}
+
 
 .controlMode{
     width: 60px;
     height: 60px;
     background-color: var(--amarilloRM);
-    position: absolute;
-    top:20px;
-    right: 25px;
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
