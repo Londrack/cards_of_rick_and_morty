@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/cards_of_rick_and_morty/static/css/main.40c0ce73.chunk.css",
-    "main.js": "/cards_of_rick_and_morty/static/js/main.792da6b1.chunk.js",
-    "main.js.map": "/cards_of_rick_and_morty/static/js/main.792da6b1.chunk.js.map",
+    "main.css": "/cards_of_rick_and_morty/static/css/main.deb836d8.chunk.css",
+    "main.js": "/cards_of_rick_and_morty/static/js/main.de6c9811.chunk.js",
+    "main.js.map": "/cards_of_rick_and_morty/static/js/main.de6c9811.chunk.js.map",
     "runtime-main.js": "/cards_of_rick_and_morty/static/js/runtime-main.610db5f5.js",
     "runtime-main.js.map": "/cards_of_rick_and_morty/static/js/runtime-main.610db5f5.js.map",
-    "static/js/2.02ae6f9b.chunk.js": "/cards_of_rick_and_morty/static/js/2.02ae6f9b.chunk.js",
-    "static/js/2.02ae6f9b.chunk.js.map": "/cards_of_rick_and_morty/static/js/2.02ae6f9b.chunk.js.map",
+    "static/js/2.bf1fd20c.chunk.js": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js",
+    "static/js/2.bf1fd20c.chunk.js.map": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js.map",
     "index.html": "/cards_of_rick_and_morty/index.html",
-    "static/css/main.40c0ce73.chunk.css.map": "/cards_of_rick_and_morty/static/css/main.40c0ce73.chunk.css.map",
-    "static/js/2.02ae6f9b.chunk.js.LICENSE.txt": "/cards_of_rick_and_morty/static/js/2.02ae6f9b.chunk.js.LICENSE.txt"
+    "static/css/main.deb836d8.chunk.css.map": "/cards_of_rick_and_morty/static/css/main.deb836d8.chunk.css.map",
+    "static/js/2.bf1fd20c.chunk.js.LICENSE.txt": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.610db5f5.js",
-    "static/js/2.02ae6f9b.chunk.js",
-    "static/css/main.40c0ce73.chunk.css",
-    "static/js/main.792da6b1.chunk.js"
+    "static/js/2.bf1fd20c.chunk.js",
+    "static/css/main.deb836d8.chunk.css",
+    "static/js/main.de6c9811.chunk.js"
   ]
 }
