@@ -17,8 +17,8 @@ const useCharacters = url => {
         })
     }
 
-    useEffect(()=>{
-        fetchData(url)
+    useEffect( ()=> {
+        setTimeout(fetchData(url), 0);
     }, [url])
 
     return {
