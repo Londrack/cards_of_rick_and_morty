@@ -5,26 +5,36 @@ const useCharacters = url => {
     const [loading, setLoading] = useState(true)
     const [loadingStatus, setLoadingStatus] = useState(0)
 
+    // const myInit = {
+    //     'mode': 'no-cors',
+    //     'headers': {
+    //         'Access-Control-Allow-Origin': '*',
+    //     }
+    // }
+
     const fetchData = (url) => {
+
+        // const myRequest = new Request(url, myInit)
+
         fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            setCharacters(characters => [...characters, ...data.results]);
-            if(data.info.next){
-                setTimeout(fetchData(data.info.next), 0);
+            .then(response => response.json())
+            .then(data => {
+                setCharacters(characters => [...characters, ...data.results]);
+                if(data.info.next){
+                    setTimeout(fetchData(data.info.next), 0);
 
-                let nextPage = data.info.next
-                nextPage = nextPage.split('=')
-                nextPage = nextPage[1]
-                nextPage = parseInt(nextPage)
-                const allPages = parseInt(data.info.pages)
-                const loadValue = Math.round((nextPage/allPages)*100)
-                setLoadingStatus(loadValue)
+                    let nextPage = data.info.next
+                    nextPage = nextPage.split('=')
+                    nextPage = nextPage[1]
+                    nextPage = parseInt(nextPage)
+                    const allPages = parseInt(data.info.pages)
+                    const loadValue = Math.round((nextPage/allPages)*100)
+                    setLoadingStatus(loadValue)
 
-            }else{
-                setLoading(false)
-            }
-        })
+                }else{
+                    setLoading(false)
+                }
+            })
     }
 
     useEffect( ()=> {

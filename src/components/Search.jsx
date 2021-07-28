@@ -5,7 +5,7 @@ const Search = ({search, searchInput, handleSearch}) => {
         <div className="Search">
             <input
                 type="text"
-                placeholder="Search character"
+                placeholder="Search in loaded characters"
                 ref={searchInput}
                 value={search}
                 onChange={handleSearch} />

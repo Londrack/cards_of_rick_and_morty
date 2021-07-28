@@ -11,15 +11,17 @@ export default function Characters({
         imgStatus,
         imgGender,
         toggleClass,
+        nextPage,
+        loadMoreCharacters,
         loadingStatus
     }) {
 
     return (
-        (loading) ?
-            <div>
-                <p>LOADING... {loadingStatus}%</p>
-            </div>
-        :
+        // (loading) ?
+        //     <div>
+        //         <p>LOADING... {loadingStatus}%</p>
+        //     </div>
+        // :
             <div>
                 <div className="favoritesBox">
                     {/* {(favorites.favorites.length !== 0) && <h3>Favorites: </h3>} */}
@@ -87,6 +89,7 @@ export default function Characters({
                         ))}
                     </div>
                 </div>
+                {/* {nextPage && <button className="LoadMore" onClick={()=> loadMoreCharacters(nextPage)}>Load more characters</button>} */}
         </div>
     )
 }
