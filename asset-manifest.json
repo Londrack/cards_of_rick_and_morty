@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/cards_of_rick_and_morty/static/css/main.deb836d8.chunk.css",
-    "main.js": "/cards_of_rick_and_morty/static/js/main.91e648c5.chunk.js",
-    "main.js.map": "/cards_of_rick_and_morty/static/js/main.91e648c5.chunk.js.map",
+    "main.css": "/cards_of_rick_and_morty/static/css/main.2be39eab.chunk.css",
+    "main.js": "/cards_of_rick_and_morty/static/js/main.87a06704.chunk.js",
+    "main.js.map": "/cards_of_rick_and_morty/static/js/main.87a06704.chunk.js.map",
     "runtime-main.js": "/cards_of_rick_and_morty/static/js/runtime-main.610db5f5.js",
     "runtime-main.js.map": "/cards_of_rick_and_morty/static/js/runtime-main.610db5f5.js.map",
     "static/js/2.bf1fd20c.chunk.js": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js",
     "static/js/2.bf1fd20c.chunk.js.map": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js.map",
     "index.html": "/cards_of_rick_and_morty/index.html",
-    "static/css/main.deb836d8.chunk.css.map": "/cards_of_rick_and_morty/static/css/main.deb836d8.chunk.css.map",
+    "static/css/main.2be39eab.chunk.css.map": "/cards_of_rick_and_morty/static/css/main.2be39eab.chunk.css.map",
     "static/js/2.bf1fd20c.chunk.js.LICENSE.txt": "/cards_of_rick_and_morty/static/js/2.bf1fd20c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.610db5f5.js",
     "static/js/2.bf1fd20c.chunk.js",
-    "static/css/main.deb836d8.chunk.css",
-    "static/js/main.91e648c5.chunk.js"
+    "static/css/main.2be39eab.chunk.css",
+    "static/js/main.87a06704.chunk.js"
   ]
 }
